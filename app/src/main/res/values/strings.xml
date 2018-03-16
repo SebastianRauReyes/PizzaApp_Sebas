@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">PizzaApp_Sebas</string>
+    <string name="bienvenidos">Bienvenidos !!!!</string>
+    <string name="texto1">Pizza envuelta de queso mozzarella y abundante carne de res, jamón y cabanossi.</string>
+    <string name="texto">Pizzas con distintos tipos de queso acompañado de muchos complementos.</string>
+    <string name="pide_por_delivery">Pide por delivery</string>
+    <string name="masa_artesanal">Masa artesanal</string>
+    <string name="masa_delagada">Masa delagada</string>
+    <string name="extra_queso_mozzarella">Extra queso mozzarella</string>
+    <string name="complemento">Complemento:</string>
+    <string name="extra_jam_n">Extra jamón</string>
+    <string name="direcci_n_de_envio">Dirección de envio:</string>
+    <string name="ejem_cirpiano_rivas_559_sjm">Ejem: cirpiano rivas 559 SJM</string>
+    <string name="masa_gruesa">Masa gruesa</string>
+    <string name="tipo_de_masas">Tipo de masas :</string>
+    <string name="ordenar">Ordenar !!!</string>
+
+    <string-array name="android_layout_arrays">
+        <item>Americana</item>
+        <item>Pepperoni</item>
+        <item>Hawaiana</item>
+        <item>MeatLover</item>
+    </string-array>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rau.sebastian.pizzaapp_sebas.PedidoActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Tipo de Pizza :"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/android_layout_arrays"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo_de_masas"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioButtonClicked"
+            android:text="@string/masa_gruesa" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="radioButtonClicked"
+            android:text="@string/masa_delagada" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="radioButtonClicked"
+            android:text="@string/masa_artesanal" />
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/complemento"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="androidCheckBoxClicked"
+        android:text="@string/extra_queso_mozzarella" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="androidCheckBoxClicked"
+        android:text="@string/extra_jam_n" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/direcci_n_de_envio"/>
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ejem_cirpiano_rivas_559_sjm"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="end|bottom"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/ordenar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="ordenardelivery"
+            android:background="#F8C471"
+            android:textColor="#E74C3C"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="@string/ordenar" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rau.sebastian.pizzaapp_sebas.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/flex1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            app:flexDirection="column"
+            app:justifyContent="space_around"
+            app:flexWrap="nowrap">
+
+            <android.support.v7.widget.CardView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="25dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+
+                        <VideoView
+                            android:id="@+id/videoview"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/bienvenidos"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/texto"
+                        android:textSize="15dp"
+                        />
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_pizza1" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pizza Meat Lover"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/texto1"
+                        android:textSize="15dp"
+                         />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="S/ 56.90"
+                        android:textSize="15dp"
+                        android:textColor="#E67E22"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@mipmap/ic_pizza"
+                    android:onClick="pedirdelivery"
+                    android:background="#F8C471"
+                    android:textColor="#E74C3C"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:text="@string/pide_por_delivery" />
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
